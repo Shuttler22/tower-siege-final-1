@@ -16,19 +16,19 @@ function setup(){
     b = new Ground(780, 200, 180, 10);
     ground0  = new Ground(450, 895, 1800, 10)
 
-    c = new BaseClass(370, 270, 50, 50);
-    d = new BaseClass(425, 270, 50, 50);
-    e = new BaseClass(480, 270, 50, 50);
-    f = new BaseClass(535, 270, 50, 50);
+    c = new BaseClass(370, 670, 50, 50);
+    d = new BaseClass(425, 670, 50, 50);
+    e = new BaseClass(480, 670, 50, 50);
+    f = new BaseClass(535, 670, 50, 50);
 
-    g = new BaseClass(395, 218, 50, 50);
-    h = new BaseClass(450, 218, 50, 50);
-    j = new BaseClass(505, 218, 50, 50);
+    g = new BaseClass(395, 618, 50, 50);
+    h = new BaseClass(450, 618, 50, 50);
+    j = new BaseClass(505, 618, 50, 50);
 
-    k = new BaseClass(425, 166, 50, 50);
-    l = new BaseClass(480, 166, 50, 50);
+    k = new BaseClass(425, 566, 50, 50);
+    l = new BaseClass(480, 566, 50, 50);
 
-    i = new BaseClass(450, 114, 50, 50)
+    i = new BaseClass(450, 514, 50, 50)
 
 
     polygon = new Polygon(60, 500, 10)
@@ -42,6 +42,14 @@ function setup(){
     bb = new BaseClass(784, 132, 40, 40)
 
     ca = new BaseClass(765 , 89,  40, 40)
+
+
+
+
+
+slingshot1 = new SlingShot(polygon, {x: 60, y:480})
+
+
     Engine.run(engine)
 }
 function draw(){
@@ -74,4 +82,6 @@ function draw(){
     ca.display();
     polygon.display();
     ground0.display()
+    slingshot1.display()
 }
+
